@@ -25,9 +25,8 @@ function game() {
     'purple',
   ];
 
-  // here is a helper function to shuffle an array
-  // it returns the same array with values shuffled
-  // it is based on an algorithm called Fisher Yates if you want ot research more
+  // Colt's part:
+
   function shuffle(array) {
     let counter = array.length;
 
@@ -86,6 +85,7 @@ function game() {
 
   const divs = gameContainer.children;
 
+  // gaston's code:
   function handleCardClick(event) {
     // you can use event.target to see which element was clicked
     // console.log('you just clicked', event.target);
@@ -188,7 +188,7 @@ function game() {
     createDivsForColors(shuffledColors);
     btnStart.remove();
     tryCounter();
-    // TODO: add a timer (don't know how to stop it)
+    // TODO: add a timer
     // clickDisplay(0);
     // let timer = document.createElement('h2');
     // gameContainer.append(timer);
